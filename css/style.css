@@ -3,16 +3,20 @@
 
 *{
   
-    box-sizing: border-box;
+    box-sizing: border-box;;
+  
 }
-
+body{
+ 
+}
 
 section.ctn{
     background: rgb(213,203,202);
     background: linear-gradient(54deg, rgba(213,203,202,1) 0%, rgba(232,227,224,1) 20%, rgba(227,222,219,1) 51%, rgba(174,168,168,1) 100%);
     text-align: center;
-    color: white;
+    color: rgb(68, 59, 59);
     display: flex;
+    color: white;
  
    
 
@@ -312,6 +316,8 @@ animation: animate1 1s linear infinite;
      img{
         width: 70%;
     }
+
+   
     section h1{
         font-size: 5rem !important;
      
@@ -325,11 +331,35 @@ animation: animate1 1s linear infinite;
  }
 
  @media (min-width: 577px) and (max-width: 998px) { 
+
+    .add_to_cart {
+
+        font-size: 1.5rem;
+        display: inline-block;
+        padding: 20px 5px;
+        font-weight: 900;
+        margin: 10px 0;
+        width: 70%;
+        color: white;
+      
+    
+        letter-spacing: 3px;
+    
+     
+    
+    
+     }
+
+    .product_description{
+        max-width: 500px;
+        margin: 0;
+      
+    }
     img{
-        width: 100%;
+        width: 60%;
     }
     section h1{
-        font-size: 7rem !important;
+        font-size: 6.5rem !important;
  
     }
 
@@ -361,12 +391,15 @@ animation: animate1 1s linear infinite;
     top: 25%;
   
 }
+.btn{
+    padding: 0;
+}
 }
 
  @media (max-width: 576px) { 
    
     section h1{
-        font-size: 3em !important;
+        font-size: 3.5em !important;
  
     }
     .text_wraper {
@@ -404,6 +437,31 @@ width: 50%;
     padding: 10px 5px;
     font-weight: 900;
     margin: 10px 0;
+    width: 80%;
+    color: white;
+  
+
+    letter-spacing: 1px;
+
+ 
+
+
+ }
+}
+
+@media (max-width: 350px) { 
+    
+    section h1{
+        font-size: 3em !important;
+ 
+    }
+.add_to_cart {
+
+    font-size: 1rem;
+    display: inline-block;
+    padding: 10px 5px;
+    font-weight: 900;
+    margin: 10px 0;
     width: 100%;
     color: white;
   
@@ -414,5 +472,4 @@ width: 50%;
 
 
  }
-
- 
+}
