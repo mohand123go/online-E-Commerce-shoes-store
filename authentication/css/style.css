@@ -1,0 +1,84 @@
+
+.ctn--bgColor{
+    background: linear-gradient(54deg, rgba(213,203,202,1) 0%, rgba(232,227,224,1) 20%, rgba(227,222,219,1) 51%, rgba(174,168,168,1) 100%);
+    min-height: 100vh;
+ 
+
+}
+
+.container{
+    min-height: 100vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.authorization{
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    min-width: 320px;
+    min-height: 70vh;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px -3px  black;
+}
+.authorization--title{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 3rem;
+    text-shadow: 0.5px 0.5px 5px rgba(0, 0, 0,0.1);
+
+}
+
+.authorization--inputWraper{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+
+.authorization--inputWraper__password,
+.authorization--inputWraper__userName,
+.authorization--inputWraper__email{
+    margin: 12px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0,0.2);
+    padding: 10px 0;
+}
+.authorization--inputWraper__password:focus,
+.authorization--inputWraper__userName:focus,
+.authorization--inputWraper__email:focus{
+
+
+outline: none;
+}
+
+
+.authorization--inputWraper__login,
+.authorization--inputWraper__signup{
+    padding: 8px 0;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    background-color:  #FB1514;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 8px 0;
+}
+
+.authorization--inputWraper__login{
+ cursor: pointer;
+}
+
+.authorization--inputWraper__forgetPassword{
+    font-size: 0.9rem;
+    display: block;
+    font-weight: bold;
+    opacity: 0.6;
+    text-align: right;
+    margin: 5px 0;
+    color: red;
+    text-transform: capitalize;
+}
+
+.contactUs--icon{
+    margin: 0 5px;
+}
