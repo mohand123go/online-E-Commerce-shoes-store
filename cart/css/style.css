@@ -1,0 +1,248 @@
+p h1 h2 h3 h4 h5 h6 span{
+    padding: 0;
+    margin: 0;
+}
+
+.width-100{
+    width: 100%;
+    height: 100%;
+}
+.cart{
+
+
+}
+
+.item{
+    display: grid;
+    grid-template-areas: 
+    "img  productTag  productTag  count  colors  size cost delet  ";
+    gap : 15px 0;
+   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+   padding-bottom: 15px;
+   margin: 20px 0;
+}
+
+
+
+
+
+.item--imgaeWraper{
+   
+
+}
+.item--imgaeWraper__productImage{
+    width: 100px;
+ 
+}
+
+.item--productNameWraper__productName{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+
+
+.item--imgaeWraper{
+    grid-area:img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item--productNameWraper{
+    grid-area:productTag;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item--amountWraper{
+    grid-area:count;
+    display: flex;  
+    justify-content: center;
+    font-size: 1.2rem;
+   align-items: center;
+
+  
+}
+
+
+
+
+.item--amountWraper_counter{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0 8px;
+}
+
+.item--amountWraper__minus,
+.item--amountWraper__plus {
+    padding: 0;
+    border: 1px solid black;
+    text-align: center;
+    display: block;
+   width: 25px;
+   height: 25px;
+   color: white;
+   background-color: black;
+
+  
+}
+
+
+.item--colorWraper{
+    grid-area:colors ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item--colorWraper__productColorCricle{
+    margin-right: 8px;
+    background-color: blue;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.item--colorWraper__productColor{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+.item--sizeWraper{
+    grid-area:size ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.item--sizeWraper__productSize{
+    padding-left: 3px;
+}
+
+
+
+
+.item--costWraper{
+    grid-area:cost ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item--costWraper__productCost{
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+.item--deleteWraper{
+   display: none;
+}
+
+.item--deleteWraper-lgSreen{
+    grid-area:delet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item--offset{
+    display: none;
+}
+.item--deleteWraper__btn {
+    border: none;
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+  
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left:10px;
+}
+
+
+.btn-delete {
+ 
+    background-color: red;
+   
+}
+.btn-save {
+ 
+    background-color: #55ca70;
+   
+}
+
+.btn-order {
+ 
+    background-color: #007bff;
+   
+}
+
+@media (max-width: 992px) {  
+
+    .item--productNameWraper__productName{
+        font-size: 1rem;
+        
+        letter-spacing: 1px;
+    }
+    .item--offset{
+        grid-area: itemOffset;
+
+    text-align: center;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .item--deleteWraper-lgSreen{
+        display: none;
+    }
+
+    .item--offset1{
+        grid-area: itemOffset1;
+    }
+
+    .item--offset2{
+        grid-area: itemOffset2;
+    }
+
+    .item{
+        display: grid;
+        grid-template-areas: 
+        "img  productTag      cost "
+        " count   size   colors  "
+        "itemOffset1 delet  itemOffset2";
+    }
+    .item--imgaeWraper{
+      
+    
+    
+    }
+    .item--deleteWraper{
+        grid-area:delet;
+       display: flex;
+       justify-content: center;
+    }
+
+    .item--deleteWraper__btn {
+    
+        margin-left:0;
+    }
+    
+  
+}
