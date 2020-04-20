@@ -193,6 +193,72 @@ p h1 h2 h3 h4 h5 h6 span{
    
 }
 
+
+.checkout{
+    margin: 0 auto;
+    max-width:580px;
+   
+}
+.checkout--subTotal,
+.checkout--ShippingCost,
+.checkout--total
+{
+    margin: 0 auto;
+    text-transform: capitalize;
+    
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    
+    margin: 20px 0;
+    align-items: center;
+    
+}
+.checkout--buttonWraper{
+    margin: 0 auto;
+    text-transform: capitalize;
+    
+    display: flex;
+    justify-content: space-around;
+
+    
+    margin: 20px 0;
+    align-items: center;
+}
+.checkout--subTotal > p,
+.checkout--ShippingCost > p,
+.checkout--total  > p{
+    padding: 15px 0;
+    margin: 0;
+    font-weight: bold;
+
+}
+.checkout--subTotal > p,
+.checkout--ShippingCost > p{
+    font-size: 1rem;
+    opacity: 0.8;
+}
+.checkout--total  > p{
+    font-size: 1.3rem;
+}
+
+.checkout--buttonWraper__btn{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 0.5rem 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.checkout--subTotal__price,
+.checkout--ShippingCost__price,
+.checkout--total__price,
+.checkout--buttonWraper__btn{
+   letter-spacing: 3px;
+}
+
 @media (max-width: 992px) {  
 
     .item--productNameWraper__productName{
