@@ -167,40 +167,11 @@ button{
 
 }
 
-.ui_product .ui_card   .contentBox .size span{
-   width: 26px;
-   height: 26px;
-   text-align: center;
-   line-height: 26px;
-   display: inline-block;
-   background-color: white;
-   border-radius: 50%;
-   margin: 0 5px;
-   transition: 0.5s;
-   border-radius: 4px;
-}
 
-.ui_product .ui_card   .contentBox .size span:hover{
-   
- }
 
- .ui_product .ui_card   .contentBox .color span{
-    width: 20px;
-    height: 20px;
- 
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
- }
- .ui_product .ui_card   .contentBox .color span:nth-child(2){
-    background-color: #9dbc28;
- }
- .ui_product .ui_card   .contentBox .color span:nth-child(3){
-    background-color: #03a9f4;
- }
- .ui_product .ui_card   .contentBox .color span:nth-child(4){
-    background-color: #e91e63;
- }
+
+
+
  .ui_product .ui_card .contentBox a{
      display: inline-block;
      padding: 10px 20px;
@@ -234,9 +205,9 @@ button{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 133px;
+    top: 150px;
     border-radius: 20px 0 100px 0  ;
-    left: 210px;
+    left: 213px;
     color: white;
     font-size: 1.2rem;
 
@@ -271,3 +242,88 @@ select{
    transition: 0.5s;
    border-radius: 4px;
 }
+
+
+
+
+/*start radio-btn-ctn */
+
+.radio-btn-ctn {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:25px;
+    height:25px
+  }
+  
+  /* Hide the browser's default radio button */
+  .radio-btn-ctn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .radio-btn-ctn .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radio-btn-ctn:hover input ~ .checkmark {
+    opacity :0.5
+  }
+  
+  /* When the radio button is checked, add a blue background */
+
+  
+  .radio-btn-ctn:nth-child(2) input ~ .checkmark {
+    background-color: #9dbc28;
+  }
+  
+  .radio-btn-ctn:nth-child(3) input ~ .checkmark {
+    background-color: #03a9f4;
+  }
+  
+  .radio-btn-ctn:nth-child(4) input ~ .checkmark {
+    background-color: #e91e63;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radio-btn-ctn input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radio-btn-ctn .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+  
+  
+  
+  /*end radio-btn-ctn */
+  
+  
