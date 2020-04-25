@@ -91,6 +91,11 @@ p h1 h2 h3 h4 h5 h6 span{
   
 }
 
+.cart .item--amountWraper__minus:hover,
+.cart .item--amountWraper__plus:hover{
+    cursor: pointer;
+}
+
 
 .cart .item--colorWraper{
     grid-area:colors ;
