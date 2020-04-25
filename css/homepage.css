@@ -4,6 +4,9 @@ div.HomeProductItem--ctn{
     text-align: center;
     display: flex;
     color: white;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 
@@ -366,12 +369,18 @@ width: 50%;
     color: white;
     letter-spacing: 1px;
 }
+
+.HomeProductItem .ui_product .ui_card {
+   
+    top: 100px;
+    left: -24px;
+}
 }
 
 @media (max-width: 350px) { 
     
-    .HomeProductItem .HomeProductItem h2{
-        font-size: 3em !important;
+ .HomeProductItem h2{
+        font-size: 3rem !important;
 
     }
 .HomeProductItem .add_to_cart {
@@ -383,6 +392,12 @@ width: 50%;
     width: 100%;
     color: white;
     letter-spacing: 1px;
+}
+
+.HomeProductItem .ui_product .ui_card {
+   
+    top: 100px;
+    left: -24px;
 }
 }
 
