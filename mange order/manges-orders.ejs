@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--Start html -->
+<html>
+<!--Start head -->
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/manges-orders.css">
+</head>
+<!--End head -->
+
+<!--Start body -->
+
+<body id="bo">
+
+    <div class="mange-order-page">
+        <div class="container">
+            <div class="mange-order-page__shearch-bar">
+                <form>
+
+                    <input class="shearch-bar--shearch-input" type="search" placeholder="Srach">
+
+                    <select>
+                        <option>on process</option>
+                    </select>
+
+
+                </form>
+            </div> <!-- .mange-order-page__shearch-bar -->
+
+            <div class="mange-order-system-wraper">
+
+                <% for(let i = 0 ; i < order.length ; i++){ %>
+
+                <div class="order-bar">
+
+                    <div class="order-Abstract" onclick="gethi(this)">
+
+
+                        <input class="fullorderinfoKey" type="hidden" value="#123456" name="OrderId">
+                        <span class="order-Abstract--date">2020/4/5 6:45</span>
+                        <h6 class="order-Abstract--email">mohand.mostafa9811@gamil.com</h6>
+                        <div class="order-Abstract--info-wraper">
+                            <span class="order-Abstract--status">on process</span>
+                            <span class="order-Abstract--qty">QTY 20</span>
+                            <span class="order-Abstract--price">2500 EGP</span>
+                        </div> <!-- .order-Abstract -->
+
+                    </div> <!-- .order-Abstract-->
+
+                </div> <!--  .order-bar-->
+
+
+                <div class="mange-order-panal">
+
+                    <header class="mange-order-panal--header ">
+                        <span>order info</span>
+                        <span>order items</span>
+                        <span>buyer info</span>
+                    </header>
+                    <div class="mange-order-panal--product-wraper ">
+
+                        <div class="mange-order--table-header display-non855">
+
+                            <span>imag</span>
+                            <span>name</span>
+                            <span>QTY</span>
+                            <span>size</span>
+                            <span>color</span>
+                            <span>unite price</span>
+                            <span>total</span>
+                        </div> <!-- .mange-order--table-header -->
+
+                        <div class="mange-order--table-body">
+
+                            <div class="mange-order--table-body__order-wraper">
+                                <input class="fullorderinfoValue" type="hidden" value="#123456" name="OrderId">
+                                <span><img src='./img/unnamed (2).png' width="50" /></span>
+                                <span>Nike</span>
+                                <span>2</span>
+                                <span>39</span>
+                                <span>
+                                    <span
+                                        style="display: inline-block; background-color: red; border-radius: 50%; width: 20px; height: 20px;"></span>
+                                </span>
+                                <span>295 EGP</span>
+                                <span>500 EGP</span>
+                            </div> <!-- .mange-order--table-body__order-wraper-->
+                        </div> <!-- .mange-order--table-body -->
+
+                        <div class="mange-order--table-footer">
+                            <div class="mange-order--bill-check">
+
+                                <div class="bill-check--content-wraper">
+                                    <span>QTY</span>
+                                    <span>20 unite</span>
+                                </div>
+                                <div class="bill-check--content-wraper">
+                                    <span>subtotal</span>
+                                    <span>500 EGP</span>
+                                </div>
+                                <div class="bill-check--content-wraper">
+                                    <span>shipping cost</span>
+                                    <span>500 EGP</span>
+                                </div>
+                                <div class="bill-check--content-wraper">
+                                    <span>Total</span>
+                                    <span>500 EGP</span>
+                                </div>
+
+
+                            </div> <!-- .mange-order--bill-check-->
+
+                        </div> <!-- .mange-order--table-footer -->
+
+                    </div> <!-- .mange-order-page -->
+
+                </div> <!-- .mange-order-panal -->
+
+                <% } %>
+            </div> <!-- mange-order-system-wraper-->
+
+        </div> <!-- .container -->
+    </div><!-- .mange-order-page-->
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/manges-orders.js"></script>
+</body>
+<!--End body -->
+
+</html>
+<!--Start html -->
